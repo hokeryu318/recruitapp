@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:padding="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/rect_white_button">
+
+        <EditText
+            android:id="@+id/ed_decline"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/tv_name_title"
+            android:padding="5dp"
+            android:gravity="left|top"
+            android:hint="Input the reason for the decline."
+            android:background="@drawable/rect_edittext_1"
+            android:textColorHint="@color/Gray"
+            android:textStyle="bold"
+            android:textColor="@color/Black"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/btn_decline_submit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/rect_white_button"
+            android:text="Submit"
+            android:textColor="@drawable/btn_black_selector"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

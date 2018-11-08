@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="recruit.aidiot.com.recruit.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Background">
+
+        <RelativeLayout
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/logo_black"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/iv_logo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_profile_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="プロフィールの登録"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/iv_company_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_profile_title"
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@+id/iv_plus_profile_photo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/iv_company_image"
+                    android:layout_alignBottom="@+id/iv_company_image"
+                    android:background="@mipmap/plus_for_image" />
+
+                <TextView
+                    android:id="@+id/tv_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/iv_plus_profile_photo"
+                    android:text="名前"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_name_title"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_initial_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_name"
+                    android:text="イニシャル"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_initial"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_initial_title"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_school_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_initial"
+                    android:text="学校名"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_school_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_school_name"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_school_name"
+                    android:text="電話番号"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_phone_number"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_phone_number"
+                    android:text="メールアドレス"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_email_address"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_email_address"
+                    android:text="パスワード"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_password"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_hobby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_password"
+                    android:text="趣味"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/ed_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/tv_hobby"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/rect_edittext"
+                    android:textColorHint="@color/Hint"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:textSize="14dp"/>
+
+                <TextView
+                    android:id="@+id/tv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ed_hobby"
+                    android:text="タグ"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/btn_add_tag"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_tag"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rect_gray_button"
+                    android:text="タグ登録   +"
+                    android:textColor="@drawable/btn_white_selector"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/lay_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/btn_add_tag"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_graduation_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/ed_hobby"
+                            android:text="卒業年度"
+                            android:textSize="14dp"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="20"
+                            android:background="@color/White">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/tv_major"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/ed_hobby"
+                            android:text="専攻選択"
+                            android:textSize="14dp"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="20"
+                            android:background="@color/White">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_below="@+id/ed_hobby"
+                            android:text="性別"
+                            android:textSize="14dp"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="20"
+                            android:background="@color/White">
+
+                        </Spinner>
+
+                        <TextView
+                            android:id="@+id/tv_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/ed_hobby"
+                            android:text="勤務可能地"
+                            android:textSize="14dp"
+                            android:textColor="@color/Black"
+                            android:textStyle="bold"/>
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="20"
+                            android:background="@color/White">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_spinner"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_back_term_of_use"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/rect_white_button"
+                        android:text="前へ"
+                        android:textColor="@drawable/btn_black_selector"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/btn_next_term_of_use"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:gravity="center|center_vertical"
+                        android:background="@drawable/rect_black_button"
+                        android:text="次へ"
+                        android:textColor="@drawable/btn_white_selector"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

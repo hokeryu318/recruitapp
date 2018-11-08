@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHint">#707070</color>
+    <color name="colorText">#303030</color>
+    <color name="colorLinebase">#00C300</color>
+
+    // Main Colors
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Background">#F5F5F5</color>
+    <color name="Yellow">#FFF000</color>
+    <color name="Hint">#3C3F41</color>
+    <color name="Gray">#3C3F41</color>
+
+        //// Notification List Colors
+        <color name="notification_list_1">#D71B1C</color>
+        <color name="notification_list_2">#45CDCB</color>
+
+        //// Session List Colors
+        <color name="session_list_1">#106EBE</color>
+        <color name="session_list_2">#BE1049</color>
+
+        //// Schedule List Colors
+        <color name="schedule_list_1">#E36C09</color>
+        <color name="schedule_list_2">#30859C</color>
+        <color name="schedule_list_3">#00AF50</color>
+</resources>

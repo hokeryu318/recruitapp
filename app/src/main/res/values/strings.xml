@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">recruit</string>
+    <string name="static_copyright">©Miraigakyoki Laboratory Co.,ltd. All rights reserved</string>
+    <string name="line_text">LINEで登録する</string>
+    <string name="login"><b>仮登録する &gt;</b></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

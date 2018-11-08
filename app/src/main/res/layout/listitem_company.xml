@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/White">
+
+        <ImageView
+            android:id="@+id/iv_company_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_company_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_company_image"
+            android:text="(株)未来ガ驚喜研究所"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_company_title"
+            android:layout_toRightOf="@+id/iv_company_image"
+            android:padding="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/Yellow"
+            android:text="アパレル業界"
+            android:textSize="14dp"
+            android:textColor="@color/Black"/>
+
+        <ImageView
+            android:id="@+id/iv_train_station"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_company_image"
+            android:layout_below="@+id/tv_category"
+            android:background="@mipmap/train_station"/>
+
+        <TextView
+            android:id="@+id/tv_train_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_category"
+            android:layout_toRightOf="@+id/iv_train_station"
+            android:text="JR渋谷駅"
+            android:textSize="14dp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/tv_company_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv_company_image"
+            android:layout_below="@+id/iv_train_station"
+            android:text="http://miraiga-lab.com/"
+            android:textSize="14dp"
+            android:textColor="@color/Black"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

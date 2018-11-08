@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="recruit.aidiot.com.recruit.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Background">
+
+        <RelativeLayout
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/White">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="SESSIONS"
+                android:textColor="@color/Black"
+                android:textSize="26dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/iv_settings"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="確定"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:background="@drawable/rect_black_button"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/White"
+            android:layout_below="@id/iv_logo">
+
+            <LinearLayout
+                android:id="@+id/lay_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tab_message_from_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rect_tab_selected"
+                    android:text="Message from Companies"
+                    android:textColor="@drawable/btn_white_selector"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tab_message_from_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rect_tab_unselected"
+                    android:text="Message from Admin"
+                    android:textColor="@drawable/btn_white_selector"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/lay_tab">
+
+            </ListView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

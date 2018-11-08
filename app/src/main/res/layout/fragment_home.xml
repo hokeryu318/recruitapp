@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="recruit.aidiot.com.recruit.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Background">
+
+        <RelativeLayout
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/White">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/logo_black"/>
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/settings"/>
+
+            <ImageView
+                android:id="@+id/iv_favourite"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/heart"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="75dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/search"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_logo"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/iv_plus_profile_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginTop="88dp"
+            android:layout_below="@+id/iv_logo"
+            android:layout_alignEnd="@+id/iv_profile_photo"
+            android:layout_alignRight="@+id/iv_profile_photo"
+            android:background="@mipmap/plus_for_image" />
+
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/iv_profile_photo"
+            android:layout_centerHorizontal="true"
+            android:text="山田 花子"
+            android:textSize="16dp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_profile_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_profile_name"
+            android:layout_centerHorizontal="true"
+            android:text="何か汎用的なメッセージ、Welcome的な文言が入ります。何か汎用的なメッセージ、Welcome的な文言が入ります。"
+            android:textSize="14dp"
+            android:textColor="@color/Black"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/tv_profile_description">
+        </ListView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="recruit.aidiot.com.recruit.Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Background">
+
+        <RelativeLayout
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/White">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="SESSIONS"
+                android:textColor="@color/Black"
+                android:textSize="26dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/settings"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/search"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/White"
+            android:layout_below="@+id/iv_logo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_company_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv_company_image"
+                    android:text="(株)未来ガ驚喜研究所"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_company_name"
+                    android:padding="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@color/Yellow"
+                    android:text="アパレル業界"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"/>
+
+                <ImageView
+                    android:id="@+id/iv_company_train_station"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_session_image"
+                    android:layout_below="@+id/tv_category"
+                    android:background="@mipmap/train_station"/>
+
+                <TextView
+                    android:id="@+id/tv_company_train_station"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_category"
+                    android:layout_toRightOf="@+id/iv_company_train_station"
+                    android:text="渋谷駅から徒歩7分"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"/>
+
+                <ImageView
+                    android:id="@+id/iv_company_location"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_session_image"
+                    android:layout_below="@+id/iv_company_train_station"
+                    android:background="@mipmap/location"/>
+
+                <TextView
+                    android:id="@+id/tv_company_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/iv_company_train_station"
+                    android:layout_toRightOf="@+id/iv_company_location"
+                    android:text="東京都渋谷区神南1-14-7"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"/>
+
+                <ImageView
+                    android:id="@+id/iv_company_telephone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_session_image"
+                    android:layout_below="@+id/iv_company_location"
+                    android:background="@mipmap/telephone"/>
+
+                <TextView
+                    android:id="@+id/tv_company_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/iv_company_location"
+                    android:layout_toRightOf="@+id/iv_company_telephone"
+                    android:text="03-5784-1465"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:id="@+id/tv_company_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/iv_company_telephone"
+                    android:text="http://miraiga-lab.com"
+                    android:textSize="14dp"
+                    android:textColor="@color/Black"/>
+
+                <LinearLayout
+                    android:id="@+id/lay_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_company_website"
+                    android:background="#999999"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_company_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/lay_line_1"
+                    android:text="会社紹介"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_company_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_below="@+id/tv_company_introduce"
+                    android:text="驚喜というサプライズプレゼントで、未来の人びとに驚きと喜びを贈るために生まれた会社です。RINKANというブランド古着のお店を運営しています。"
+                    android:textSize="12dp"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:id="@+id/tv_company_interview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/tv_company_description"
+                    android:text="インタビュー依頼"
+                    android:textSize="16dp"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_company_interview_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_below="@+id/tv_company_interview"
+                    android:text="最近の学生のファッション事情を教えてください！"
+                    android:textSize="12dp"
+                    android:textColor="@color/Black"/>
+
+                <LinearLayout
+                    android:id="@+id/lay_line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_company_interview_details"
+                    android:background="#999999"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_next_term_of_use"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rect_black_button"
+                    android:layout_below="@+id/lay_line_2"
+                    android:text="営業する"
+                    android:textColor="@drawable/btn_white_selector"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
