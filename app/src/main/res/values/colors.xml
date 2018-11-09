@@ -28,4 +28,9 @@
         <color name="schedule_list_1">#E36C09</color>
         <color name="schedule_list_2">#30859C</color>
         <color name="schedule_list_3">#00AF50</color>
+
+        //// Tag Colors
+        <color name="tag_disable">#666666</color>
+        <color name="tag_pink">#F34195</color>
+        <color name="tag_blue">#12B9E3</color>
 </resources>

@@ -1,11 +1,13 @@
 package recruit.aidiot.com.recruit.Activity;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
 import recruit.aidiot.com.recruit.Fragments.FragmentHome;
+import recruit.aidiot.com.recruit.Fragments.FragmentNotify;
 import recruit.aidiot.com.recruit.Fragments.FragmentTime;
 import recruit.aidiot.com.recruit.Fragments.Session.FragmentCalendar;
 import recruit.aidiot.com.recruit.Global.GD;
@@ -53,6 +55,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FragmentCalendar fragmentCalendar = new FragmentCalendar() ;
                 transaction.addToBackStack("transaction");
                 transaction.replace(R.id.lay_main, fragmentCalendar);
+                transaction.commit();
+                break;
+            case R.id.lin_profile:
+                Intent intent = new Intent(this, ProfileActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.lin_message:
+                FragmentNotify fragmentNotify = new FragmentNotify() ;
+                transaction.addToBackStack("transaction");
+                transaction.replace(R.id.lay_main, fragmentNotify);
                 transaction.commit();
                 break;
         }
